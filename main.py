@@ -22,6 +22,13 @@ users = [
 
 ]
 
+users1 = [
+    {"id": 1, "name": "item1", "email": ""},
+    {"id": 2, "name": "item2", "email": ""},
+    {"id": 3, "name": "item3", "email": ""},
+
+]
+
 @app.get('/')
 def hello():
     return {
