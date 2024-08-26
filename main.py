@@ -42,9 +42,6 @@ def create_user(user: CreateUser):
         "email": user.email
         }
 
-
-
-
 @app.get('/items/')
 def list_items():
     return items
