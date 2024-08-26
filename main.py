@@ -31,6 +31,9 @@ def hello():
 @app.get("/hello/")
 def hello(name: str = "World"):
     return {"message": f"Hello, {name}"}
+@app.get("/users/list/")
+def get_users():
+    return users
 
 @app.post("/users/")
 def create_user(user: CreateUser):
@@ -38,6 +41,7 @@ def create_user(user: CreateUser):
         "message": "success",
         "email": user.email
         }
+
 
 
 
